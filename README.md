@@ -8,11 +8,9 @@ SocketPCM is a Python script for streaming audio between computers using socket 
 
 - "Mostly©" reliable audio streaming
 - Lightweight and user-friendly
-- Configurable audio chunk size
 - Auto-save last settings
 - Multi-language support (English and Spanish)
 - WASAPI loopback support on Windows
-- Configurable port
 
 ## Installation and Usage
 
@@ -31,9 +29,7 @@ SocketPCM is a Python script for streaming audio between computers using socket 
 4. Enter the receiver's IP address.
 5. Enter the port number, ensure it's open on the receiver.
 6. Select the sample rate.
-7. Toggle low latency mode.
-8. Click "Stream" on both computers to start or "Stop Streaming" to end.
-9. Logs are displayed in the "Logs" section.
+7. Click "Stream" on both computers to start and "Stop Streaming" to end.
 
 **Notes:**
 
@@ -49,4 +45,4 @@ SocketPCM is a Python script for streaming audio between computers using socket 
 - Enhance error handling.
 - Strengthen connection for robustness and predictable delay.
 - Implement a CLI version.
-- Adding a the option to stream through UDP.
+- Adding UDP streaming.
