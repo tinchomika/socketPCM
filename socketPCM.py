@@ -13,7 +13,7 @@ import time
 # Determine the appropriate PyAudio library based on the operating system
 if sys.platform.startswith("win"):
     import pyaudiowpatch as pyaudio  #This library adds wasapi loopback support
-    pyaudio_library = "PyAudioWPatch" #Logged for debugging
+    pyaudio_library = "PyAudioWPatch"
 else:
     import pyaudio
     pyaudio_library = "pyaudio"
@@ -61,7 +61,7 @@ class AudioStreamer:
 
         try:
             if os.path.exists("tinchopcm.ico"):
-                self.master.iconbitmap("tinchopcm.ico") # Set window icon, there are problems with retrieving the icon from inside the exe
+                self.master.iconbitmap("tinchopcm.ico") #Icon is not showing properly, could be a tkinter limitation.
             else:
                 print("Icon file not found.")
         except tk.TclError as e:
